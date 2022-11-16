@@ -1,0 +1,124 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    margin: 0;
+    background: rgb(0,255,97);
+    background: linear-gradient(90deg, rgba(0,255,97,1) 0%, rgb(220, 253, 33) 100%);
+}
+
+.add-to-list{
+    width: 400px;
+    max-width: 400px;
+    margin: 100px auto 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.to-do-text{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.825);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inp-txt{
+    width: 69%;
+    height: 50px;
+    padding: 3px 6px;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-top-left-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #acafa6;
+    font-size: 18px;
+}
+
+.submit-btn{
+    cursor: pointer;
+    width: 29%;
+    height: 50px;
+    border: 1px solid rgb(0, 0, 0);
+    border-top-right-radius: 8px;
+    outline: none;
+    font-size: 20px;
+    padding: 0;
+    color: rgb(196, 235, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.submit-btn:hover{
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.submit-btn:active{
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.inp-txt:focus{
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.to-do-list{
+    width: 396px;
+    min-height: 50px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: auto;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.to-do-list li{
+    list-style: none;
+    margin: 7px 0;
+    font-size: 20px;
+    color: #acafa6;
+    display: flex;
+    align-items: center;    
+}
+
+.to-do-list li p{
+    margin: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.to-do-list .delete{
+    color: rgba(255, 0, 0, 0.777);
+    cursor: pointer;
+    margin-left: auto;
+}
+.to-do-list .delete:hover{
+    color: rgb(255, 0, 0);
+}
+
+.to-do-list input{
+    outline: none;
+    cursor: pointer;
+}
+
+.to-do-list .done{
+    text-decoration: line-through;
+    color: #acafa6b1;
+}
+
+
+
+
+
+
